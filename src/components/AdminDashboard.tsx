@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -247,7 +246,7 @@ const AdminDashboard = () => {
                         </div>
                         <div className="text-right">
                           <p className="font-medium text-sm">{user.totalContributions}</p>
-                          <Badge className={getStatusColor(user.status)} size="sm">
+                          <Badge className={getStatusColor(user.status)}>
                             {user.status}
                           </Badge>
                         </div>
